@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+header nav ul{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+header .car{
+    background-color: brown;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+header .search{
+    background-color: rgb(37, 29, 29);
+    color: white;
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+header nav{
+    background-color:rgb(37, 29, 29);
+    color: white;
+    flex: 3;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+}
+section .left .d1{
+    background-color:rgb(71, 37, 37);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 30px;
+}
+section .left .d2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* justify-content: space-between; */
+    padding: 20px;
+}
+section .left .d2 label{
+    background-color: brown;
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+section .left .d3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+section .left .d3 div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 40px 20px;
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid ;
+}
+section .left .d3 div:nth-child(2){
+    background-color:rgb(37, 29, 29) ;
+}
+section .right{
+    background-image: url(./images/main\ img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(width <= 840px){
+    
+    header{
+        text-align: center;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
