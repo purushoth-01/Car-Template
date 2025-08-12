@@ -91,16 +91,56 @@ section .left .d3 div:nth-child(2){
     background-color:rgb(37, 29, 29) ;
 }
 section .right{
-    background-image: url(./images/main\ img.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url(./images/main\ img.jpeg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+section .right img{
+    height: 80%;
+    width: 100%;
 }
 
-@media(width <= 840px){
+@media(width <= 480px){
     
     header{
         text-align: center;
         flex-direction: column;
         align-items: stretch;
     }
+    section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section .left .d1{
+        font-size: 20px;
+    }
+    section .left .d2{
+        flex-direction: column;
+    }
+    section .left .d2 label{
+        text-align: center;
+        background-color: black;
+        font-size: 20px;
+    }
+    section .left .d3{
+        grid-template-columns:repeat(1,1fr) ;
+        padding: 20px 20px;
+    }
+}
+@media(width <= 740px){
+     header{
+        text-align: center;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    section{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    section .left .d1{
+        font-size: 20px;
+    }
+}
+@media(width <= 1200px){
+    
+  
 }
